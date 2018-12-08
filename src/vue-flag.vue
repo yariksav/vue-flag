@@ -18,7 +18,7 @@ export default {
   computed: {
     flagIconClass () {
       return {
-        ['flag-' + this.size]: Boolean(this.size),
+        ['flag-size-' + this.size]: Boolean(this.size),
         ['flag-' + (this.code || '').toLowerCase()]: Boolean(this.code)
       }
     }
