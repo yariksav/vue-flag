@@ -44,8 +44,7 @@ new Vue({
 Then, after the proper mounting, in your template you can call it like this:
 
 ```html
-    <vue-flag country='it' size='big'/>
-    <vue-flag country='hr' size='normal'/>
+    <vue-flag country='hr' size='medium'/>
     <vue-flag country='fr' size='small'/>
     <vue-flag country='ru'/>
 ```
@@ -62,7 +61,7 @@ Optional properties
 
 | Property | Description | Type | Value
 |:--|:--|:--|:--|
-| size | Flag size | `String` | small, normal, big |
+| size | Flag size | `String` | small, medium |
 
 by default, the flag is displayed at *normal* size.
 

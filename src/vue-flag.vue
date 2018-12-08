@@ -4,7 +4,7 @@
     :class="flagIconClass"/>
 </template>
 <script>
-import '../static/flags.scss'
+import './flags.scss'
 
 export default {
   props: {

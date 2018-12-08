@@ -1,9 +1,8 @@
-// rollup.config.js
 import vue from 'rollup-plugin-vue';
 import buble from 'rollup-plugin-buble';
 import uglify from 'rollup-plugin-uglify-es';
 import scss from 'rollup-plugin-scss';
-// import scss from 'rollup-plugin-image';
+import copy from 'rollup-plugin-copy';
 import minimist from 'minimist';
 
 const argv = minimist(process.argv.slice(2));
@@ -15,7 +14,6 @@ const config = {
     exports: 'named',
   },
   plugins: [
-    // image(),
     scss({
       output: 'dist/vue-flag.css',
       outputStyle: 'compressed'
@@ -25,6 +23,9 @@ const config = {
       compileTemplate: true,
     }),
     buble(),
+    copy({
+      "src/flags.png": "dist/flags.png"
+    })
   ],
 };
 
