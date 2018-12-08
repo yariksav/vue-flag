@@ -1,0 +1,48 @@
+{
+  "name": "vue-flag",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/vue-flag.umd.js",
+  "module": "dist/vue-flag.esm.js",
+  "unpkg": "dist/vue-flag.min.js",
+  "browser": {
+    "./sfc": "src/vue-flag.vue"
+  },
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yariksav/vue-flag.git"
+  },
+  "keywords": [
+    "vue",
+    "flag"
+  ],
+  "author": "Yaroslav Savaryn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yariksav/vue-flag/issues"
+  },
+  "homepage": "https://github.com/yariksav/vue-flag#readme",
+  "scripts": {
+    "build": "npm run build:unpkg & npm run build:es & npm run build:umd",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/vue-flag.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/vue-flag.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/vue-flag.min.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "minimist": "^1.2.0",
+    "rollup": "^0.66.2",
+    "rollup-plugin-buble": "^0.19.2",
+    "rollup-plugin-image": "^1.0.2",
+    "rollup-plugin-scss": "^0.4.0",
+    "rollup-plugin-uglify-es": "0.0.1",
+    "rollup-plugin-vue": "^4.3.0",
+    "sass-loader": "^7.1.0",
+    "vue": "^2.5.16",
+    "vue-template-compiler": "^2.5.16"
+  }
+}
