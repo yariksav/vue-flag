@@ -10,7 +10,7 @@ export default {
   props: {
     code: {
       type: String,
-      default: 'ua'
+      required: true
     },
     title: String,
     size: String
