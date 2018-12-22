@@ -44,9 +44,9 @@ new Vue({
 Then, after the proper mounting, in your template you can call it like this:
 
 ```html
-    <vue-flag country='hr' size='medium'/>
-    <vue-flag country='fr' size='small'/>
-    <vue-flag country='ru'/>
+    <vue-flag code='hr' size='medium'/>
+    <vue-flag code='fr' size='small'/>
+    <vue-flag code='ru'/>
 ```
 
 ### API
@@ -55,7 +55,7 @@ Mandatory properties
 
 | Property | Description | Type | Value
 |:--|:--|:--|:--|
-| country | **ISO 3166-1** identifier of the country | `String` | one of the values defined [here](#available-flags) |
+| code | **ISO 3166-1** identifier of the country | `String` | one of the values defined [here](#available-flags) |
 
 Optional properties
 
